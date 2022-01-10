@@ -1,2 +1,2 @@
-# isYourBirthdayLucky
- taking user input and printing weather they are on birthday 
+# My projects
+this will tell the users about
