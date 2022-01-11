@@ -1,6 +1,7 @@
 var input_date = document.querySelector("#input");
 var output_num = document.querySelector("#input-number");
 var button = document.querySelector("#button");
+var outputId = document.querySelector("#output-id");
 function clickEventHandler()
 {
     var sum=0;
@@ -14,9 +15,17 @@ function clickEventHandler()
         sum = sum+n;
         val2=Math.floor(val2/10);
     }
+    var mesg1 = " is a lucky number 🥳 🥳";
+    var mesg2 = " is not lucky number";
     if(sum % outputNum == 0)
     {
-        console.log("Lucky");
+        // console.log(mesg1);
+        outputId.innerText =outputNum + mesg1;
     }
+    else{
+        // console.log(mesg2);
+        outputId.innerText = outputNum + mesg2;
+    }
+    
 }
 button.addEventListener("click",clickEventHandler);
